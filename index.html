@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galant Veranstaltungsservice – Einstellung des Geschäftsbetriebs</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://counter.ixan.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '38']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+
+  <!-- Statcounter -->
+  <script type="text/javascript">
+    var sc_project=13042738;
+    var sc_invisible=1;
+    var sc_security="7156f737";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13042738/0/7156f737/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --anthracite: #1E1E1E;
+      --cream: #F7F4EF;
+      --gold: #C8A96E;
+      --gold-light: #E8D5A8;
+      --text-muted: #6B6660;
+      --border: #D9D4CC;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--anthracite);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      color: var(--anthracite);
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* ── NOTICE BANNER ── */
+    .notice-banner {
+      background: var(--anthracite);
+      color: var(--cream);
+      text-align: center;
+      padding: 1.25rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .notice-banner span {
+      color: var(--gold);
+      margin: 0 0.75rem;
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      flex: 1;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .intro .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .intro p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--anthracite);
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .intro p strong {
+      font-weight: 600;
+      color: var(--anthracite);
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 4rem 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .divider-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--text-muted);
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      margin-bottom: 5rem;
+    }
+
+    .services h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      margin-bottom: 2.5rem;
+      color: var(--anthracite);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-item {
+      border-top: 2px solid var(--gold);
+      padding-top: 1.25rem;
+    }
+
+    .service-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--anthracite);
+    }
+
+    .service-item p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ── CLOSURE STATEMENT ── */
+    .closure {
+      background: var(--anthracite);
+      color: var(--cream);
+      padding: 3.5rem;
+      margin-bottom: 5rem;
+      position: relative;
+    }
+
+    .closure::before {
+      content: '\201C';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 8rem;
+      color: var(--gold);
+      opacity: 0.25;
+      position: absolute;
+      top: -1rem;
+      left: 2rem;
+      line-height: 1;
+    }
+
+    .closure p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .closure-sig {
+      margin-top: 1.75rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── YEARS SIGNATURE ── */
+    .years-signature {
+      text-align: center;
+      margin: 4rem 0;
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .years-signature .year-range {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--anthracite);
+      display: block;
+      line-height: 1;
+    }
+
+    .years-signature .year-range .dash {
+      color: var(--gold);
+      margin: 0 0.5rem;
+    }
+
+    .years-signature .caption {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.75rem;
+      display: block;
+    }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      margin-bottom: 5rem;
+    }
+
+    .contact-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .contact-info { grid-template-columns: 1fr; }
+      .closure { padding: 2.5rem 1.75rem; }
+    }
+
+    .contact-block p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-block strong {
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-block a {
+      color: var(--anthracite);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.2s;
+    }
+
+    .contact-block a:hover {
+      border-color: var(--gold);
+    }
+
+    /* ── FORM ── */
+    .contact-form {
+      border-top: 1px solid var(--border);
+      padding-top: 3rem;
+    }
+
+    .contact-form h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: white;
+      border: 1px solid var(--border);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--anthracite);
+      outline: none;
+      transition: border-color 0.2s;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    /* Honeypot */
+    .hp-field { display: none !important; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .btn-submit {
+      background: var(--anthracite);
+      color: var(--cream);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .btn-submit:hover { background: var(--gold); color: var(--anthracite); }
+
+    .form-msg {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      display: none;
+    }
+
+    .form-msg.success { color: #3a7a3a; display: block; }
+    .form-msg.error   { color: #a33; display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--anthracite);
+      color: var(--text-muted);
+      padding: 2.5rem 2rem;
+      font-size: 0.78rem;
+      line-height: 1.8;
+    }
+
+    .footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    footer p { color: var(--text-muted); }
+    footer strong { color: var(--cream); }
+  </style>
+</head>
+<body>
+
+  <!-- PAN21 Counter -->
+  <div id="pan21counter"></div>
+  <script src="https://pan21counter.de/c.js?id=B5831F" async></script>
+
+  <header>
+    <span class="logo-mark">Galant Veranstaltungsservice</span>
+    <h1>Marketing-Events für den <em>Handel</em></h1>
+  </header>
+
+  <div class="notice-banner">
+    Mitteilung <span>·</span> Einstellung des Geschäftsbetriebs <span>·</span> 2025
+  </div>
+
+  <main>
+
+    <section class="intro">
+      <span class="eyebrow">Wichtige Mitteilung</span>
+      <p>
+        Nach vielen Jahren erfolgreicher Zusammenarbeit mit Shopping- und Einkaufszentren
+        in ganz Deutschland stellen wir unsere Veranstaltungsaktivitäten
+        <strong>vollständig ein.</strong>
+      </p>
+      <p>
+        Wir sind für Rückfragen und laufende Angelegenheiten weiterhin erreichbar
+        und stehen Ihnen bis zur endgültigen Abwicklung zur Verfügung.
+      </p>
+    </section>
+
+    <div class="divider">
+      <span class="divider-label">Unsere bisherigen Leistungen</span>
+    </div>
+
+    <section class="services">
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Aktions-Marketing</h3>
+          <p>Konzeption und Durchführung verkaufsfördernder Aktionen und Promotions in Einkaufszentren und Fachhandelszentren.</p>
+        </div>
+        <div class="service-item">
+          <h3>Event-Management</h3>
+          <p>Organisation und Umsetzung von Marken-Events, Messen und Sonderveranstaltungen im Handelsumfeld.</p>
+        </div>
+        <div class="service-item">
+          <h3>Kundenaktivierung</h3>
+          <p>Entwicklung von Maßnahmen zur Frequenzsteigerung, Kundenbindung und Neukundengewinnung am POS.</p>
+        </div>
+        <div class="service-item">
+          <h3>Konzept &amp; Beratung</h3>
+          <p>Strategische Beratung bei der Planung von Marketingkalendern und der Positionierung von Centermanagement-Angeboten.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closure">
+      <p>
+        Wir danken unseren Partnern, Auftraggebern und Mitarbeitern für das
+        entgegengebrachte Vertrauen und die langjährige konstruktive Zusammenarbeit.
+        Die Entscheidung zur Einstellung ist strategischer Natur und betrifft
+        ausschließlich diesen Geschäftsbereich.
+      </p>
+      <p class="closure-sig">— Harald Linhart, Geschäftsführung</p>
+    </section>
+
+    <div class="years-signature">
+      <span class="year-range">Galant <span class="dash">·</span> Frankfurt</span>
+      <span class="caption">Veranstaltungsservice für den Handel — Geschäftsbetrieb eingestellt</span>
+    </div>
+
+    <section class="contact-section">
+      <h2>Wir sind weiterhin erreichbar</h2>
+
+      <div class="contact-info">
+        <div class="contact-block">
+          <strong>Anschrift</strong>
+          <p>Eschersheimer Landstraße 42<br>60322 Frankfurt am Main</p>
+        </div>
+        <div class="contact-block">
+          <strong>Telefon</strong>
+          <p><a href="tel:+496990012802">(069) 9001 280-25</a></p>
+        </div>
+        <div class="contact-block">
+          <strong>Gesellschaft</strong>
+          <p>Galant UG<br>HRB 134007, AG Frankfurt am Main<br>Geschäftsführung: Harald Linhart</p>
+        </div>
+        <div class="contact-block">
+          <strong>E-Mail</strong>
+          <p><a href="mailto:galant@pan21.com">galant@pan21.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Kontaktformular</h3>
+        <form id="contactForm">
+          <!-- Honeypot -->
+          <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="formstart" id="formstart">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Ihre Nachricht</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Nachricht senden</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Galant UG</strong><br>
+        Eschersheimer Landstraße 42 · 60322 Frankfurt am Main<br>
+        Handelsregister: HRB 134007 · AG Frankfurt am Main<br>
+        Geschäftsführung: Harald Linhart
+      </div>
+      <div>
+        <strong>Kontakt</strong><br>
+        Tel: (069) 9001 280-25<br>
+        E-Mail: galant@pan21.com
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set form start time
+    document.getElementById('formstart').value = Date.now();
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.className = 'form-msg';
+      msg.style.display = 'none';
+
+      // Honeypot check
+      if (this.website.value) return;
+
+      // Dwell time check (min 3s)
+      const elapsed = (Date.now() - parseInt(this.formstart.value)) / 1000;
+      if (elapsed < 3) {
+        msg.textContent = 'Bitte füllen Sie das Formular vollständig aus.';
+        msg.className = 'form-msg error';
+        return;
+      }
+
+      const btn = this.querySelector('.btn-submit');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet…';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: this.name.value,
+            email: this.email.value,
+            message: this.message.value,
+            elapsed: Math.round(elapsed)
+          })
+        });
+
+        if (res.ok) {
+          msg.textContent = 'Vielen Dank — Ihre Nachricht wurde gesendet.';
+          msg.className = 'form-msg success';
+          this.reset();
+          document.getElementById('formstart').value = Date.now();
+        } else {
+          throw new Error();
+        }
+      } catch {
+        msg.textContent = 'Fehler beim Senden. Bitte schreiben Sie uns direkt an galant@pan21.com.';
+        msg.className = 'form-msg error';
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Nachricht senden';
+    });
+  </script>
+</body>
+</html>
