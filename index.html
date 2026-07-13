@@ -629,6 +629,7 @@
         if (res.ok) {
           msg.textContent = 'Vielen Dank — Ihre Nachricht wurde gesendet.';
           msg.className = 'form-msg success';
+          msg.style.display = 'block';
           this.reset();
           document.getElementById('formstart').value = Date.now();
         } else {
@@ -637,6 +638,7 @@
       } catch {
         msg.textContent = 'Fehler beim Senden. Bitte schreiben Sie uns direkt an galant@pan21.com.';
         msg.className = 'form-msg error';
+        msg.style.display = 'block';
       }
 
       btn.disabled = false;
