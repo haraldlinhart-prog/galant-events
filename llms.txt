@@ -1,0 +1,11 @@
+# Galant Veranstaltungsservice
+
+> Marketing-Events für denHandel
+
+Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard) und beschreibt kurz, worum es auf dieser Website geht, damit Inhalte korrekt verstanden und zusammengefasst werden können.
+
+## Themen auf dieser Seite
+- Wir sind weiterhin erreichbar
+
+## Kontakt
+- Website: https://galant.events
