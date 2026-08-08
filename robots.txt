@@ -33,4 +33,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://galant.events/sitemap.xml
+Sitemap: https://www.galant.events/sitemap.xml
