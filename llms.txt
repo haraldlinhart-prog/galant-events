@@ -8,4 +8,4 @@ Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard)
 - Wir sind weiterhin erreichbar
 
 ## Kontakt
-- Website: https://galant.events
+- Website: https://www.galant.events/
